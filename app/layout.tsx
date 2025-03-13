@@ -110,7 +110,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        <div className="container m-auto">
+        <div className="container m-auto pb-5">
           <div className="lg:flex md:rounded-xl mx-auto px-4 py-2 md:py-5 bg-white md:bg-[#21334d]">
             <div className="w-[80%] hidden md:inline">
               <Post
@@ -129,11 +129,11 @@ export default function RootLayout({
             <div className="w-[20%] hidden md:inline">
               <Infos />
             </div>
-            <div className="md:hidden">{children}</div>
+            <div className="md:hidden pb-12">{children}</div>
           </div>
         </div>
         <footer className="fixed bottom-0 md:hidden">
-          <div className="w-screen bg-[#21334d] p-3 rounded-t-md border border-[#2b405e] flex items-center justify-around">
+          <div className="w-screen bg-[#21334d] p-3 rounded-t-md flex items-center justify-around">
             <Icons />
           </div>
         </footer>

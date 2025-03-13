@@ -32,14 +32,14 @@ export function Infos() {
       <div className="bg-[#293e5a] p-3 mb-5 rounded-md shadow-xl border border-[#213652] flex items-start">
         <FavoriteIcon className="text-gray-400" />
         <p className="text-gray-400 ml-2">
-          Liked{" "}
+          Liked
           <Link
             href="https://www.youtube.com/watch?v=d6iQrh2TK98&t=178s"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>37</span>
-          </Link>{" "}
+          </Link>
           posts
         </p>
       </div>
