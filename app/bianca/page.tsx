@@ -1,5 +1,4 @@
 import { Post } from "@/app/components/post";
-import Image from "next/image";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
