@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2c3f58;
     --foreground: #ededed;
   }
 }
@@ -22,5 +22,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
 }
