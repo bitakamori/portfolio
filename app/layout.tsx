@@ -2,13 +2,9 @@
 import "./globals.css";
 import { Post } from "./components/post";
 import { Infos } from "./components/infos";
+import Icons from "./components/icons";
 import Link from "next/link";
 import Image from "next/image";
-import InfoIcon from "@mui/icons-material/Info";
-import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -55,37 +51,7 @@ export default function RootLayout({
                 >
                   Bianca Takamori
                 </Link>
-                <Link
-                  href="https://github.com/bitakamori"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon className="text-gray-400 hover:text-white transition" />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/bianca-helena-takamori-ribeiro-877593268/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkedInIcon className="text-gray-400 hover:text-white transition" />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/bitakamori/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramIcon className="text-gray-400 hover:text-white transition" />
-                </Link>
-                <Link href="">
-                  <InfoIcon className="text-gray-400 hover:text-white transition" />
-                </Link>
-                <Link
-                  href="https://www.tumblr.com/login?language=pt_BR"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <PowerSettingsNewIcon className="text-gray-400 hover:text-white transition" />
-                </Link>
+                <Icons />
               </div>
             </div>
             <div className="flex md:hidden justify-between px-4">
@@ -111,21 +77,21 @@ export default function RootLayout({
               />
             )}
             <div
-              className={`fixed top-0 right-0 w-64 h-full bg-white shadow-lg p-5 z-50 transform ${
+              className={`fixed top-0 right-0 w-64 h-full bg-[#21334d] shadow-lg p-5 z-50 transform ${
                 isOpen ? "translate-x-0" : "translate-x-full"
               } transition-transform duration-300 ease-in-out`}
             >
               <button
-                className="absolute top-4 right-4 text-gray-600"
+                className="absolute top-4 right-4"
                 onClick={() => setIsOpen(false)}
               >
-                <MenuIcon className="text-sm" />
+                <MenuIcon className="text-sm text-white" />
               </button>
               <ul className="mt-10 space-y-4">
                 <li>
                   <Link
                     href="/"
-                    className="block text-gray-800 hover:text-blue-600"
+                    className="block text-white hover:text-gray-400"
                     onClick={() => setIsOpen(false)}
                   >
                     Dashboard
@@ -134,7 +100,7 @@ export default function RootLayout({
                 <li>
                   <Link
                     href="/bianca"
-                    className="block text-gray-800 hover:text-blue-600"
+                    className="block text-white hover:text-gray-400"
                     onClick={() => setIsOpen(false)}
                   >
                     Bianca Takamori
@@ -168,37 +134,7 @@ export default function RootLayout({
         </div>
         <footer className="fixed bottom-0 md:hidden">
           <div className="w-screen bg-[#21334d] p-3 rounded-t-md border border-[#2b405e] flex items-center justify-around">
-            <Link
-              href="https://github.com/bitakamori"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon className="text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/bianca-helena-takamori-ribeiro-877593268/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedInIcon className="text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/bitakamori/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <InstagramIcon className="text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link href="">
-              <InfoIcon className="text-gray-400 hover:text-white transition" />
-            </Link>
-            <Link
-              href="https://www.tumblr.com/login?language=pt_BR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <PowerSettingsNewIcon className="text-gray-400 hover:text-white transition" />
-            </Link>
+            <Icons />
           </div>
         </footer>
       </body>

@@ -6,10 +6,19 @@ interface postProps {
   width: number;
   height: number;
   isPost: boolean;
+  nick?: string;
   children: React.ReactNode;
 }
 
-export function Post({ src, alt, width, height, isPost, children }: postProps) {
+export function Post({
+  src,
+  alt,
+  width,
+  height,
+  isPost,
+  nick,
+  children,
+}: postProps) {
   return (
     <>
       <div
@@ -28,15 +37,18 @@ export function Post({ src, alt, width, height, isPost, children }: postProps) {
         </div>
       </div>
       <div className="md:hidden">
-        <div className="flex items-center ">
+        <div className="flex items-center w-full pb-2 border-b-2 border-gray-300">
           <Image
-            src="/eu.jpg"
-            alt="Bianca Takamori"
-            width="50"
-            height="50"
-            className="flex-none rounded-sm shadow-xl"
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className="flex-none rounded-xl shadow-xl"
           />
-          <p className="text-zinc-900 text-lg font-medium pl-3">btakamori</p>
+          <p className="text-zinc-900 text-lg font-medium pl-3">{nick}</p>
+        </div>
+        <div className="relative bg-[#ffffff] shadow-xl ml-6 px-4 py-5 flex-1 rounded-xl before:content-[''] before:absolute before:-left-2 before:top-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-white">
+          {children}
         </div>
       </div>
     </>
