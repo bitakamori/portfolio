@@ -17,7 +17,7 @@ export function Infos() {
     { name: "Vuetify", src: "/vuetify.svg" },
   ];
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mt-5 lg:mt-0">
       <div className="mb-5">
         <div className="bg-[#6b8f48] p-3 rounded-t-md border border-[#2b405e] flex items-start">
           <Person3Icon className="text-zinc-950" />
