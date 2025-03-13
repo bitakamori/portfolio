@@ -1,18 +1,9 @@
 import { Post } from "@/app/components/post";
 import Image from "next/image";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export default function Bianca() {
-  const tecs = [
-    { name: "Vue.js", src: "/vuejs.svg" },
-    { name: "React", src: "/react.svg" },
-    { name: "Next.js", src: "/nextjs.svg" },
-    { name: "Typescript", src: "/typescript.svg" },
-    { name: "Javascript", src: "/javascript.svg" },
-    { name: "Sass", src: "/sass.svg" },
-    { name: "Bootstrap", src: "/bootstrap.svg" },
-    { name: "Tailwind", src: "/tailwind.svg" },
-    { name: "Vuetify", src: "/vuetify.svg" },
-  ];
   return (
     <>
       <div className="hidden md:inline">
@@ -22,10 +13,31 @@ export default function Bianca() {
           width={100}
           height={100}
           isPost={true}
-          nick="btakamori"
         >
-          <div>
-            <p className="text-red-950">teste nojokyll</p>
+          <div className="flex justify-between items-center">
+            <p className="text-gray-400">btakamori</p>
+            <div className="flex justify-end">
+              <RepeatIcon className="text-gray-400" />
+              <FavoriteIcon className="text-red-900 ml-3 mr-2" />
+            </div>
+          </div>
+          <div className="px-3">
+            <p className="text-zinc-900 text-lg mt-2">Quem sou eu</p>
+            <p className="text-zinc-500 text-md mt-2">
+              Oi! Meu nome é Bianca Takamori e sou desenvolvedora frontend. Sou
+              formada em Radiologia pela UTFPR, mas, em 2023, decidi mudar de
+              carreira e mergulhar no desenvolvimento, onde descobri minha
+              paixão pelo frontend. <br /> Sempre amei arte e criar coisas, e
+              vejo cada projeto como uma nova oportunidade de expressão e
+              inovação. Minhas habilidades técnicas incluem HTML, CSS,
+              JavaScript, TypeScript, Vue.js, React.js, Sass, Bootstrap, Vuetify
+              e Tailwind. <br /> Sou movida a desafios e adoro resolver
+              problemas. Quando não estou programando, costumo ficar com meus
+              gatos, crochetando, assistindo séries e documentários ou lendo.
+            </p>
+            <p className="text-gray-400 text-sm my-3">
+              #maedepet #potterhead #bookLovers #crochetLovers
+            </p>
           </div>
         </Post>
       </div>
@@ -38,13 +50,29 @@ export default function Bianca() {
           isPost={true}
           nick="btakamori"
         >
-          <p className="text-zinc-900 text-lg">Skills</p>
-          <div className="flex flex-wrap gap-3 justify-center mt-2 py-3">
-            {tecs.map((tec) => (
-              <div key={tec.src || tec.name}>
-                <Image src={tec.src} alt={tec.name} width="35" height="35" />
+          <div>
+            <p className="text-zinc-900 text-lg">Quem sou eu</p>
+            <p className="text-zinc-500 text-md mt-2">
+              Oi! Meu nome é Bianca Takamori e sou desenvolvedora frontend. Sou
+              formada em Radiologia pela UTFPR, mas, em 2023, decidi mudar de
+              carreira e mergulhar no desenvolvimento, onde descobri minha
+              paixão pelo frontend. <br /> Sempre amei arte e criar coisas, e
+              vejo cada projeto como uma nova oportunidade de expressão e
+              inovação. Minhas habilidades técnicas incluem HTML, CSS,
+              JavaScript, TypeScript, Vue.js, React.js, Sass, Bootstrap, Vuetify
+              e Tailwind. <br /> Sou movida a desafios e adoro resolver
+              problemas. Quando não estou programando, costumo ficar com meus
+              gatos, crochetando, assistindo séries e documentários ou lendo.
+            </p>
+            <div className="flex justify-between items-center">
+              <p className="text-gray-400 text-sm my-3">
+                #maedepet #potterhead #bookLovers #crochetLovers
+              </p>
+              <div className="flex justify-end">
+                <RepeatIcon className="text-gray-400" />
+                <FavoriteIcon className="text-red-900 ml-3 mr-2" />
               </div>
-            ))}
+            </div>
           </div>
         </Post>
       </div>
