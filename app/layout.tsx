@@ -3,7 +3,6 @@ import "./globals.css";
 import { Post } from "./components/post";
 import { Infos } from "./components/infos";
 import Icons from "./components/icons";
-import { Creation } from "./components/creation";
 import Link from "next/link";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -19,7 +18,7 @@ export default function RootLayout({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <html lang="en">
-      <body className="xl:w-[68%] m-auto">
+      <body>
         <header>
           <div className="container mx-auto px- py-2">
             <div className="hidden md:flex items-center justify-between text-sm lg:text-xl ">
@@ -113,7 +112,7 @@ export default function RootLayout({
         </header>
         <div className="container m-auto pb-5">
           <div className="lg:flex md:rounded-xl mx-auto px-4 py-2 md:py-5 bg-white md:bg-[#21334d]">
-            <div className="w-[80%] lg:w-[70%] hidden md:inline">
+            <div className="w-[80%] hidden md:inline">
               <Post
                 src="/eu.jpg"
                 alt="Bianca Takamori"
@@ -122,12 +121,12 @@ export default function RootLayout({
                 isPost={false}
               >
                 <div>
-                  <Creation />
+                  <h1> oie</h1>
                 </div>
               </Post>
               {children}
             </div>
-            <div className="w-[20%] lg:w-[30%] hidden md:inline">
+            <div className="w-[20%] hidden md:inline">
               <Infos />
             </div>
             <div className="md:hidden pb-12">{children}</div>
