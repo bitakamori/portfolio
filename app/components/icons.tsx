@@ -34,7 +34,7 @@ export default function Icons() {
       <Link href="/info">
         <InfoIcon
           className={`hover:text-white transition relative rounded-lg ${
-            pathname === "/bianca"
+            pathname === "/info"
               ? "before:content-[''] before:absolute before:bottom-[-35px] lg:before:bottom-[-30px] before:left-1/2 before:transform before:-translate-x-1/2 before:w-0 before:h-0 before:border-l-[10px] before:border-r-[10px] before:border-b-[10px] before:border-l-transparent before:border-r-transparent before:border-b-[#21334d] before:z-10"
               : "text-gray-400"
           }`}
