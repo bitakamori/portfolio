@@ -32,9 +32,9 @@ export default function RootLayout({
               </Link>
               <div className="items-center space-x-8">
                 <Link
-                  href="/"
+                  href="/dashboard"
                   className={`hover:text-white transition relative rounded-lg ${
-                    pathname === "/"
+                    pathname === "/dashboard"
                       ? "text-white before:content-[''] before:absolute before:bottom-[-35px] lg:before:bottom-[-30px] before:left-1/2 before:transform before:-translate-x-1/2 before:w-0 before:h-0 before:border-l-[10px] before:border-r-[10px] before:border-b-[10px] before:border-l-transparent before:border-r-transparent before:border-b-[#21334d] before:z-10"
                       : "text-gray-400"
                   }`}
@@ -42,9 +42,9 @@ export default function RootLayout({
                   Dashboard
                 </Link>
                 <Link
-                  href="/bianca"
+                  href="/"
                   className={`hover:text-white transition relative rounded-lg ${
-                    pathname === "/bianca"
+                    pathname === "/"
                       ? "before:content-[''] before:absolute before:bottom-[-35px] lg:before:bottom-[-30px] before:left-1/2 before:transform before:-translate-x-1/2 before:w-0 before:h-0 before:border-l-[10px] before:border-r-[10px] before:border-b-[10px] before:border-l-transparent before:border-r-transparent before:border-b-[#21334d] before:z-10"
                       : "text-gray-400"
                   }`}
@@ -90,7 +90,7 @@ export default function RootLayout({
               <ul className="mt-10 space-y-4">
                 <li>
                   <Link
-                    href="/"
+                    href="/dashboard"
                     className="block text-white hover:text-gray-400"
                     onClick={() => setIsOpen(false)}
                   >
@@ -99,7 +99,7 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link
-                    href="/bianca"
+                    href="/"
                     className="block text-white hover:text-gray-400"
                     onClick={() => setIsOpen(false)}
                   >
