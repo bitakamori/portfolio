@@ -50,7 +50,7 @@ export function Infos() {
             <SearchIcon className="text-gray-400 w-[20%]" />
           </div>
         </div>
-        <div className="flex flex-wrap gap-3 justify-center mt-2 py-3">
+        <div className="flex flex-wrap gap-3 justify-center mt-2 py-3 xl:px-4">
           {tecs.map((tec) => (
             <div key={tec.src || tec.name}>
               <Image src={tec.src} alt={tec.name} width="35" height="35" />
