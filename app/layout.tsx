@@ -116,8 +116,8 @@ export default function RootLayout({
               <Post
                 src="/eu.jpg"
                 alt="Bianca Takamori"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 isPost={false}
               >
                 <div>

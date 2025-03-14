@@ -30,9 +30,9 @@ export function Post({
           alt={alt}
           width={width}
           height={height}
-          className="h-[100px] flex-none rounded-xl shadow-xl"
+          className="h-[80px] flex-none rounded-xl shadow-xl"
         />
-        <div className="relative bg-[#ffffff] shadow-xl ml-6 px-4 py-2 flex-1 rounded-xl before:content-[''] before:absolute before:-left-2 before:top-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-white">
+        <div className="relative bg-[#ffffff] shadow-xl ml-6 p-5 flex-1 rounded-xl before:content-[''] before:absolute before:-left-2 before:top-8 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-white">
           {children}
         </div>
       </div>
@@ -47,7 +47,7 @@ export function Post({
           />
           <p className="text-zinc-900 text-lg font-medium pl-3">{nick}</p>
         </div>
-        <div className="relative bg-[#ffffff] shadow-xl p-3 flex-1 rounded-xl before:content-[''] before:absolute before:-left-2 before:top-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-white">
+        <div className="relative bg-[#ffffff] shadow-xl p-3 flex-1">
           {children}
         </div>
       </div>

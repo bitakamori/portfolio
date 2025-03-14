@@ -10,8 +10,8 @@ export default function Dashboard() {
         <Post
           src="/eu.jpg"
           alt="Bianca Takamori"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           isPost={true}
         >
           <div className="flex justify-between items-center">
@@ -24,9 +24,7 @@ export default function Dashboard() {
           <div className="px-3">
             <Carousel />
           </div>
-          <p className="text-gray-400 text-sm pl-5 pb-2">
-            #pets #tesla #thor #ox
-          </p>
+          <p className="text-gray-400 text-sm">#pets #tesla #thor #ox</p>
         </Post>
       </div>
       <div className="md:hidden">

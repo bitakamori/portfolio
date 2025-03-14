@@ -11,8 +11,8 @@ export default function Bianca() {
         <Post
           src="/eu.jpg"
           alt="Bianca Takamori"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           isPost={true}
         >
           <div className="flex justify-between items-center">
@@ -22,7 +22,7 @@ export default function Bianca() {
               <FavoriteIcon className="text-gray-400 ml-3 mr-2" />
             </div>
           </div>
-          <div className="px-3">
+          <div>
             <p className="text-zinc-900 text-lg mt-2">Sobre este projeto</p>
             <p className="text-zinc-500 text-md mt-2">
               Desenvolvi este projeto utilizando Next.js e Tailwind CSS,
@@ -50,8 +50,8 @@ export default function Bianca() {
           <Post
             src="/hagrid.jpg"
             alt="loversHagrid"
-            width={100}
-            height={100}
+            width={80}
+            height={80}
             isPost={true}
           >
             <div className="flex justify-between items-center">
@@ -61,7 +61,7 @@ export default function Bianca() {
                 <FavoriteIcon className="text-red-900 ml-3 mr-2" />
               </div>
             </div>
-            <div className="px-3">
+            <div className="mt-5">
               <Image
                 src="/cabana.jpg"
                 alt="hagrid's hut"
@@ -69,7 +69,7 @@ export default function Bianca() {
                 height={300}
                 className="w-auto h-auto m-auto rounded-sm"
               />
-              <p className="text-gray-400 text-sm my-3">#omaioral</p>
+              <p className="text-gray-400 text-sm mt-3">#omaioral</p>
             </div>
           </Post>
         </Link>
