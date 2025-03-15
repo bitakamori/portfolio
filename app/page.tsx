@@ -68,6 +68,9 @@ export default function Bianca() {
               problemas. Quando não estou programando, costumo ficar com meus
               gatos, crochetando, assistindo séries e documentários ou lendo.
             </p>
+            <Link href={"/info"} className="text-[#21334d] hover:text-gray-400">
+              Sobre o projeto
+            </Link>
             <div className="flex justify-between items-center">
               <p className="text-gray-400 text-sm my-3">
                 #maedepet #potterhead #bookLovers #crochetLovers
