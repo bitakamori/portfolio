@@ -25,15 +25,15 @@ export default function Bianca() {
             <p className="text-zinc-900 text-lg mt-2">Quem sou eu</p>
             <p className="text-zinc-500 text-md mt-2">
               Oi! Meu nome é Bianca Takamori e sou desenvolvedora frontend. Sou
-              formada em Radiologia pela UTFPR, mas, em 2023, decidi mudar de
+              formada em Radiologia pela UTFPR, mas em 2023 decidi mudar de
               carreira e mergulhar no desenvolvimento, onde descobri minha
-              paixão pelo frontend. <br /> Sempre amei arte e criar coisas, e
+              paixão pela programação. <br /> Sempre amei arte e criar coisas, e
               vejo cada projeto como uma nova oportunidade de expressão e
               inovação. Minhas habilidades técnicas incluem HTML, CSS,
               JavaScript, TypeScript, Vue.js, React.js, Sass, Bootstrap, Vuetify
               e Tailwind. <br /> Sou movida a desafios e adoro resolver
               problemas. Quando não estou programando, costumo ficar com meus
-              gatos, crochetando, assistindo séries e documentários ou lendo.{" "}
+              gatos, crochetando, assistindo séries e documentários ou lendo.
               <br />
             </p>
             <Link href={"/info"} className="text-[#21334d] hover:text-gray-400">
@@ -58,9 +58,9 @@ export default function Bianca() {
             <p className="text-zinc-900 text-lg">Quem sou eu</p>
             <p className="text-zinc-500 text-md mt-2">
               Oi! Meu nome é Bianca Takamori e sou desenvolvedora frontend. Sou
-              formada em Radiologia pela UTFPR, mas, em 2023, decidi mudar de
+              formada em Radiologia pela UTFPR, mas em 2023 decidi mudar de
               carreira e mergulhar no desenvolvimento, onde descobri minha
-              paixão pelo frontend. <br /> Sempre amei arte e criar coisas, e
+              paixão pela programação. <br /> Sempre amei arte e criar coisas, e
               vejo cada projeto como uma nova oportunidade de expressão e
               inovação. Minhas habilidades técnicas incluem HTML, CSS,
               JavaScript, TypeScript, Vue.js, React.js, Sass, Bootstrap, Vuetify
