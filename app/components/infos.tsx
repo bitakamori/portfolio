@@ -37,6 +37,7 @@ export function Infos() {
             href="https://www.youtube.com/watch?v=d6iQrh2TK98&t=178s"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-[5px]"
           >
             <span>37</span>
           </Link>
