@@ -23,7 +23,7 @@ export default function Bianca() {
             </div>
           </div>
           <div>
-            <p className="text-zinc-900 text-lg mt-2">Sobre este projeto</p>
+            <p className="text-zinc-900 text-lg mt-2">Sobre o projeto</p>
             <p className="text-zinc-500 text-md mt-2">
               Desenvolvi este projeto utilizando Next.js e Tailwind CSS,
               inspirado no visual icônico do Tumblr de 2012. Escolhi essa
@@ -84,7 +84,7 @@ export default function Bianca() {
           nick="btakamori"
         >
           <div>
-            <p className="text-zinc-900 text-lg">Sobre este projeto</p>
+            <p className="text-zinc-900 text-lg">Sobre o projeto</p>
             <p className="text-zinc-500 text-md mt-2">
               Desenvolvi este projeto utilizando Next.js e Tailwind CSS,
               inspirado no visual icônico do Tumblr de 2012. Escolhi essa
