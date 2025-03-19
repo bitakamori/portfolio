@@ -24,13 +24,13 @@ Este é o meu portfólio pessoal, inspirado no visual nostálgico do Tumblr de 2
 ![image](https://github.com/user-attachments/assets/8d37e8b8-bdb3-4672-8c6e-8539ee4c3b20)
 
 🚀 Deploy
-O projeto está hospedado em: (https://bianca-takamori.vercel.app/)
+- O projeto está hospedado em: (https://bianca-takamori.vercel.app/)
 
 📌 Funcionalidades
-Layout minimalista e responsivo
-Tema inspirado no Tumblr de 2012
-Animações suaves com Tailwind
-Seções personalizadas para projetos e informações pessoais
+- Layout minimalista e responsivo
+- Tema inspirado no Tumblr de 2012
+- Animações suaves com Tailwind
+- Seções personalizadas para projetos e informações pessoais
 
 💙 Criado por Bianca Takamori 🚀
 
