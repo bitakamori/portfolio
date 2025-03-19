@@ -14,14 +14,10 @@ Este é o meu portfólio pessoal, inspirado no visual nostálgico do Tumblr de 2
    git clone https://github.com/bitakamori/portfolio.git
    cd portfolio
 2. Instale as dependências:
-   npm install
-   # ou
-   yarn install
+   npm install ou yarn install
 
 3. Inicie o servidor de desenvolvimento:
-  npm run dev
-  # ou
-  yarn dev
+  npm run dev  ou yarn dev
   
 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/d4404ce8-ee73-4292-bae8-d9c563ef6ab2)
