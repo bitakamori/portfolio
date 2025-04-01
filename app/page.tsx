@@ -35,6 +35,17 @@ export default function PortfolioPage() {
       });
     }
   };
+  const [circles, setCircles] = useState<
+    {
+      width: number;
+      height: number;
+      left: string;
+      top: string;
+      backgroundColor: string;
+      animationDuration: string;
+      animationDelay: string;
+    }[]
+  >([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -72,6 +83,18 @@ export default function PortfolioPage() {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    const newCircles = Array.from({ length: 20 }).map(() => ({
+      width: Math.random() * 300 + 50,
+      height: Math.random() * 300 + 50,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      backgroundColor: `hsl(${Math.random() * 360}, 50%, 50%)`,
+      animationDuration: `${Math.random() * 10 + 10}s`,
+      animationDelay: `${Math.random() * 5}s`,
+    }));
+
+    setCircles(newCircles);
 
     return () => {
       sections.forEach((section) => {
@@ -124,7 +147,7 @@ export default function PortfolioPage() {
 
   const experiences = [
     {
-      title: "Junior Developer",
+      title: "Front End Developer",
       company: "4Network",
       period: "Ag 2023 - Nov 2024",
       description:
@@ -217,21 +240,19 @@ export default function PortfolioPage() {
       >
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -inset-[10px] opacity-30">
-            {Array.from({ length: 20 }).map((_, i) => (
+            {circles.map((circle, i) => (
               <div
                 key={i}
                 className="absolute rounded-full"
                 style={{
-                  width: Math.random() * 300 + 50,
-                  height: Math.random() * 300 + 50,
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  backgroundColor: `hsl(${Math.random() * 360}, 70%, 70%)`,
+                  width: circle.width,
+                  height: circle.height,
+                  left: circle.left,
+                  top: circle.top,
+                  backgroundColor: circle.backgroundColor,
                   filter: "blur(70px)",
-                  animation: `float ${
-                    Math.random() * 10 + 10
-                  }s ease-in-out infinite`,
-                  animationDelay: `${Math.random() * 5}s`,
+                  animation: `float ${circle.animationDuration} ease-in-out infinite`,
+                  animationDelay: circle.animationDelay,
                 }}
               />
             ))}
@@ -256,7 +277,7 @@ export default function PortfolioPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-6 sm:mb-8"
             >
-              Junior Developer
+              Frontend Developer
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -264,9 +285,9 @@ export default function PortfolioPage() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 px-4"
             >
-              Gosto de criar sites e aplicativos bonitos e responsivos com
-              tecnologias modernas. Apaixonado por código limpo e interfaces
-              amigáveis ​​ao usuário.
+              Gosto de criar aplicações bonitas e responsivas com tecnologias
+              modernas. Apaixonada por designs criativos e interfaces amigáveis
+              ​​ao usuário.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -591,7 +612,7 @@ export default function PortfolioPage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-xs sm:text-sm text-gray-400">
-                © {new Date().getFullYear()} John Doe. All rights reserved.
+                © {new Date().getFullYear()} Bianca Takamori.
               </p>
             </div>
             <div className="flex space-x-4 sm:space-x-6">
