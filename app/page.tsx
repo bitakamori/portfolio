@@ -151,8 +151,14 @@ export default function PortfolioPage() {
       title: "Front End Developer",
       company: "4Network",
       period: "Ag 2023 - Nov 2024",
-      description:
-        "Colaborei no desenvolvimento e aprimoramento de uma rede social interna, onde minhas responsabilidades incluíam a criação de novas telas e funcionalidades, na manutenção do sistema e correção de bugs. Trabalhei em colaboração com equipes de design, QA e backend, onde utilizávamos metodologias ágeis para gerenciar o fluxo de atividades, facilitando o alinhamento da equipe, garantindo entregas contínuas e eficientes.",
+      description: `
+      Participei do desenvolvimento e aprimoramento de uma rede social interna, criando novas telas e funcionalidades, realizando manutenções e corrigindo bugs.
+      Converti designs do Figma em componentes de UI responsivos utilizando TypeScript e Vue.js.
+      Integrei aplicações com APIs REST usando Axios.
+      Utilizei Git para controle de versão e colaboração em projetos no GitHub.
+      Apliquei princípios SOLID e metodologias de código limpo para manter a qualidade do código.
+      Colaborei com equipes de design, QA e backend, utilizando metodologias ágeis para gerenciar o fluxo de atividades, facilitando o alinhamento da equipe e garantindo entregas contínuas e eficientes.
+    `,
     },
   ];
 
@@ -286,9 +292,9 @@ export default function PortfolioPage() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 px-4"
             >
-              Gosto de criar aplicações bonitas e responsivas com tecnologias
-              modernas. Apaixonada por designs criativos e interfaces amigáveis
-              ​​ao usuário.
+              Gosto de criar aplicações bonitas e com tecnologias modernas.
+              Apaixonada por designs criativos e interfaces amigáveis ​​ao
+              usuário.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -417,9 +423,14 @@ export default function PortfolioPage() {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    {exp.description}
-                  </p>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-gray-600 text-sm sm:text-base">
+                    {exp.description
+                      .trim()
+                      .split("\n")
+                      .map((item, i) => (
+                        <li key={i}>{item.replace(/^- /, "").trim()}</li>
+                      ))}
+                  </ul>
                 </motion.div>
               ))}
             </motion.div>
