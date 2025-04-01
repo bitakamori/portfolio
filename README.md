@@ -1,33 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Meu Portfólio 
 
-## Getting Started
+Este é o meu portfólio pessoal. Criado com **Next.js** e **Tailwind CSS**, este projeto reflete meu estilo e experiência como desenvolvedora.
 
-First, run the development server:
+## ✨ Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Next.js](https://nextjs.org/) - Framework React para aplicações web modernas e otimizadas.
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para maior segurança no código.
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário para estilização rápida e responsiva.
+- [EmailJS]https://www.emailjs.com/) - Integração para envio de e-mails via formulário de contato.
+- [Vercel](https://vercel.com/) - Deploy rápido e eficiente.
+## 🔧 Instalação e Uso
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone este repositório:
+   ```sh
+   git clone https://github.com/bitakamori/portfolio.git
+   cd portfolio
+2. Instale as dependências:
+   npm install ou yarn install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicie o servidor de desenvolvimento:
+  npm run dev  ou yarn dev
+  
+📸 Screenshots
+![image](https://github.com/user-attachments/assets/8130ce47-c585-46f0-9dc5-fc370c4aa962)
+![image](https://github.com/user-attachments/assets/be06f92c-1e50-499f-9862-94f984b2841a)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+🚀 Deploy
+- O projeto está hospedado em: (https://bianca-takamori.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📌 Funcionalidades
+- Layout criativo e responsivo
+- Elementos dinâmicos e fluidos que proporcionam uma experiência imersiva e moderna.
+- Seções personalizadas para projetos e informações pessoais
+- Formulário de contato funcional integrado com EmailJS.
+- Interface otimizada para diferentes dispositivos, utilizando Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💙 Criado por Bianca Takamori 🚀
+
 
 ## Deploy on Vercel
 
