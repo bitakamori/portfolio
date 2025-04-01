@@ -52,10 +52,14 @@ const ContactForm = () => {
       setAlert({ message: "Mensagem enviada com sucesso!", type: "success" });
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      setAlert({
-        message: "Erro ao enviar mensagem. Tente novamente.",
-        type: "error",
-      });
+      if (err instanceof Error) {
+        setAlert({ message: err.message, type: "error" });
+      } else {
+        setAlert({
+          message: "Erro desconhecido ao enviar mensagem.",
+          type: "error",
+        });
+      }
     }
 
     setLoading(false);
@@ -162,17 +166,6 @@ const ContactForm = () => {
           )}
         </button>
       </form>
-      <button
-        type="submit"
-        onClick={() =>
-          setAlert({
-            message: "Mensagem enviada com sucesso!",
-            type: "error",
-          })
-        }
-      >
-        click
-      </button>
     </>
   );
 };
