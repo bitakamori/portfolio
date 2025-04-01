@@ -7,7 +7,7 @@ Este é o meu portfólio pessoal. Criado com **Next.js** e **Tailwind CSS**, est
 - [Next.js](https://nextjs.org/) - Framework React para aplicações web modernas e otimizadas.
 - [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para maior segurança no código.
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário para estilização rápida e responsiva.
-- [EmailJS]https://www.emailjs.com/) - Integração para envio de e-mails via formulário de contato.
+- [EmailJS](https://www.emailjs.com/) - Integração para envio de e-mails via formulário de contato.
 - [Vercel](https://vercel.com/) - Deploy rápido e eficiente.
 ## 🔧 Instalação e Uso
 
