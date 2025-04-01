@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from "./components/contactForm";
 
 export default function PortfolioPage() {
   const [activeSection, setActiveSection] = useState("home");
@@ -541,7 +542,7 @@ export default function PortfolioPage() {
             </p>
           </motion.div>
 
-          <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -602,6 +603,14 @@ export default function PortfolioPage() {
                   </div>
                 </Link>
               </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <ContactForm />
             </motion.div>
           </div>
         </div>
