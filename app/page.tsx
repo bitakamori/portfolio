@@ -152,12 +152,14 @@ export default function PortfolioPage() {
       company: "4Network",
       period: "Ag 2023 - Nov 2024",
       description: `
-      Participei do desenvolvimento e aprimoramento de uma rede social interna, criando novas telas e funcionalidades, realizando manutenções e corrigindo bugs.
-      Converti designs do Figma em componentes de UI responsivos utilizando TypeScript e Vue.js.
-      Integrei aplicações com APIs REST usando Axios.
-      Utilizei Git para controle de versão e colaboração em projetos no GitHub.
-      Apliquei princípios SOLID e metodologias de código limpo para manter a qualidade do código.
-      Colaborei com equipes de design, QA e backend, utilizando metodologias ágeis para gerenciar o fluxo de atividades, facilitando o alinhamento da equipe e garantindo entregas contínuas e eficientes.
+      Colaborou no desenvolvimento e melhoria de uma rede social interna, incluindo criação de novas telas e funcionalidades, manutenção do sistema e correção de bugs.
+      Converteu designs Figma em componentes de UI responsivos com TypeScript e VueJS.
+      Integrou aplicações com APIs REST usando Axios.
+      Utilizou Git para controle de versão e colaboração em projetos GitHub.
+      Estudou e aplicou princípios SOLID e metodologias de código limpo.
+      Trabalhou em colaboração com equipes de design, controle de qualidade e backend.
+      Utilizou ClickUp para acompanhar tarefas, organizar prioridades e otimizar a produtividade da equipe.
+      Utilizou metodologias ágeis como Scrum e Kanban para gerenciar o fluxo de trabalho, facilitar o alinhamento da equipe e garantir entregas contínuas e eficientes.
     `,
     },
   ];
@@ -266,7 +268,7 @@ export default function PortfolioPage() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="mb-15 sm:mb-0 container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -473,9 +475,12 @@ export default function PortfolioPage() {
               </span>
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-purple-600 to-pink-500 mx-auto"></div>
-            <p className="mt-4 sm:mt-6 max-w-2xl mx-auto text-gray-600 px-4">
+            <p className="hidden sm:flex mt-4 sm:mt-6 max-w-2xl mx-auto text-gray-600 px-4">
               Mova o mouse para ver o efeito de fundo interativo. Estas são as
               tecnologias com as quais trabalho.
+            </p>
+            <p className="flex sm:hidden mt-4 sm:mt-6 max-w-2xl mx-auto text-gray-600 px-4">
+              Estas são as tecnologias com as quais trabalho.
             </p>
           </motion.div>
 
