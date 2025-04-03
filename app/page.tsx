@@ -277,7 +277,7 @@ export default function PortfolioPage() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
             >
               <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-                Bianca's Portfolio
+                Bianca´s Portfolio
               </span>
             </motion.h1>
             <motion.div
