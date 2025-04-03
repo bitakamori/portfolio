@@ -169,7 +169,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 text-gray-800">
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 bg-gray-100/80 backdrop-blur-md shadow-sm transition-all duration-300 ${
           showNavbar
             ? "translate-y-0 opacity-100"
             : "translate-y-[-100%] opacity-0"
@@ -220,7 +220,7 @@ export default function PortfolioPage() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white shadow-lg"
+            className="md:hidden bg-gray-50 shadow-lg"
           >
             <div className="px-4 py-3 space-y-1">
               {navItems.map((section) => (
@@ -277,27 +277,9 @@ export default function PortfolioPage() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
             >
               <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-                Bianca Takamori
+                Bianca´s Portfolio
               </span>
             </motion.h1>
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-6 sm:mb-8"
-            >
-              Frontend Developer
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 px-4"
-            >
-              Gosto de criar aplicações bonitas e com tecnologias modernas.
-              Apaixonada por designs criativos e interfaces amigáveis ​​ao
-              usuário.
-            </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -320,7 +302,7 @@ export default function PortfolioPage() {
                   e.preventDefault();
                   scrollToSection("skills");
                 }}
-                className="bg-white text-gray-800 px-8 py-3 rounded-full font-medium shadow hover:shadow-lg transition-shadow w-full sm:w-auto text-center"
+                className="bg-gray-50 text-gray-800 px-8 py-3 rounded-full font-medium shadow hover:shadow-lg transition-shadow w-full sm:w-auto text-center"
               >
                 Skills
               </Link>
@@ -330,7 +312,7 @@ export default function PortfolioPage() {
                   e.preventDefault();
                   scrollToSection("contato");
                 }}
-                className="bg-white text-gray-800 px-8 py-3 rounded-full font-medium shadow hover:shadow-lg transition-shadow w-full sm:w-auto text-center"
+                className="bg-gray-50 text-gray-800 px-8 py-3 rounded-full font-medium shadow hover:shadow-lg transition-shadow w-full sm:w-auto text-center"
               >
                 Contato
               </Link>
@@ -341,7 +323,7 @@ export default function PortfolioPage() {
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => scrollToSection("sobre")}
-            className="bg-white p-3 rounded-full shadow-md hover:shadow-lg transition-shadow"
+            className="bg-gray-50 p-3 rounded-full shadow-md hover:shadow-lg transition-shadow"
             aria-label="Scroll down"
           >
             <KeyboardArrowDownIcon className="h-6 w-6 text-purple-600" />
@@ -349,7 +331,7 @@ export default function PortfolioPage() {
         </div>
       </motion.section>
 
-      <section id="sobre" ref={aboutRef} className="py-16 sm:py-20 bg-white">
+      <section id="sobre" ref={aboutRef} className="py-16 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -497,7 +479,7 @@ export default function PortfolioPage() {
                 className="relative group"
               >
                 <div
-                  className="relative bg-white rounded-xl p-4 sm:p-6 shadow-md transform transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-lg text-center h-full flex flex-col items-center justify-center"
+                  className="relative bg-gray-50 rounded-xl p-4 sm:p-6 shadow-md transform transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-lg text-center h-full flex flex-col items-center justify-center"
                   style={{
                     borderTop:
                       hoveredSkill === skill.name
@@ -536,7 +518,7 @@ export default function PortfolioPage() {
       <section
         id="contato"
         ref={contactRef}
-        className="py-16 sm:py-20 bg-white"
+        className="py-16 sm:py-20 bg-gray-50"
       >
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div
