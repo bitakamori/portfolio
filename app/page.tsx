@@ -268,16 +268,16 @@ export default function PortfolioPage() {
           </div>
         </div>
 
-        <div className="mb-15 sm:mb-0 container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8"
             >
-              <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-                Bianca´s Portfolio
+              <span className=" bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
+                Bianca Takamori
               </span>
             </motion.h1>
             <motion.div
